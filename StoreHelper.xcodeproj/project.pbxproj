@@ -849,7 +849,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6BE99W3FU;
+				DEVELOPMENT_TEAM = SX2P37942F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -864,7 +864,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.StoreHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenxiaochun.StoreHelper;
 				PRODUCT_NAME = StoreHelper;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -880,7 +880,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6BE99W3FU;
+				DEVELOPMENT_TEAM = SX2P37942F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -895,7 +895,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.StoreHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenxiaochun.StoreHelper;
 				PRODUCT_NAME = StoreHelper;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;

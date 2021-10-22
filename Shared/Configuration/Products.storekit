@@ -78,6 +78,21 @@
       "productID" : "com.rarcher.consumable.plant-installation",
       "referenceName" : "plant-installation",
       "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0",
+      "familyShareable" : false,
+      "internalID" : "06233BC4",
+      "localizations" : [
+        {
+          "description" : "Use the all features 14-day for free trail",
+          "displayName" : "14-day free trail",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.shenxiaochun.nonconsumable.trail",
+      "referenceName" : "14-day free trail",
+      "type" : "NonConsumable"
     }
   ],
   "settings" : {
