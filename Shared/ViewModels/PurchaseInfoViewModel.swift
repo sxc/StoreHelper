@@ -32,10 +32,40 @@ struct PurchaseInfoViewModel {
         if info.product.type == .nonConsumable {
             guard let transaction = info.latestVerifiedTransaction else { return "" }
             
-            text = "Purchased on \(dateFormatter.string(from: transaction.purchaseDate))."
+            let today = Date()
+            
+//            text = "Today is \(dateFormatter.string(from: Date())) \n Purchased on \(dateFormatter.string(from: transaction.purchaseDate))"
+            
+            text = "Purchased on \(dateFormatter.string(from: transaction.purchaseDate))"
+            
+//            text += DateInterval(start: Date(), end: transaction.purchaseDate)
+//            let between = Date().timeIntervalSinceReferenceDate - transaction.purchaseDate.timeIntervalSinceReferenceDate
+            
+            let trailStart = transaction.purchaseDate
+            let userCalendar = Calendar.current
+            let trailEndDate = userCalendar.date(byAdding: .day, value: 2, to: trailStart)
+            let trailEndString =  dateFormatter.string(from: trailEndDate!)
+        
+            
+            if productId == "com.shenxiaochun.nonconsumable.trail" {
+                
+                text += "\n 14-day trail"
+                
+                if today > trailEndDate! {
+                    text += ("\n trail expired ")
+                }
+                else {
+                    text += ("\n continue in trail ")
+                }
+
+                text += ("\n expire after 14-day trail \(trailEndString)")
+            }
+            
             if transaction.revocationDate != nil {
                 text += " App Store revoked the purchase on \(dateFormatter.string(from: transaction.revocationDate!))."
             }
+            
+
         }
         
         return text
