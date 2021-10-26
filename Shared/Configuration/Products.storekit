@@ -5,36 +5,6 @@
   ],
   "products" : [
     {
-      "displayPrice" : "2.99",
-      "familyShareable" : false,
-      "internalID" : "D0A0F198",
-      "localizations" : [
-        {
-          "description" : "A large bunch of red roses",
-          "displayName" : "Large Roses",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "com.rarcher.nonconsumable.roses-large",
-      "referenceName" : "roses-large",
-      "type" : "NonConsumable"
-    },
-    {
-      "displayPrice" : "29",
-      "familyShareable" : false,
-      "internalID" : "37B33974",
-      "localizations" : [
-        {
-          "description" : "VIP plant installation service",
-          "displayName" : "Plant Installation",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "com.rarcher.consumable.plant-installation",
-      "referenceName" : "plant-installation",
-      "type" : "Consumable"
-    },
-    {
       "displayPrice" : "0",
       "familyShareable" : false,
       "internalID" : "06233BC4",
@@ -48,6 +18,21 @@
       "productID" : "com.shenxiaochun.nonconsumable.trail",
       "referenceName" : "14-day free trail",
       "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : true,
+      "internalID" : "BCC62B02",
+      "localizations" : [
+        {
+          "description" : "Unlock all Pro Features",
+          "displayName" : "Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.shenxiaochun.nonconsumable.pro",
+      "referenceName" : "Pro",
+      "type" : "NonConsumable"
     }
   ],
   "settings" : {
@@ -60,42 +45,7 @@
     "_timeRate" : 0
   },
   "subscriptionGroups" : [
-    {
-      "id" : "8126C4BB",
-      "localizations" : [
 
-      ],
-      "name" : "VIP",
-      "subscriptions" : [
-        {
-          "adHocOffers" : [
-
-          ],
-          "displayPrice" : "19.99",
-          "familyShareable" : false,
-          "groupNumber" : 1,
-          "internalID" : "AF41C8C8",
-          "introductoryOffer" : {
-            "displayPrice" : "9.99",
-            "internalID" : "D9531218",
-            "paymentMode" : "payUpFront",
-            "subscriptionPeriod" : "P2M"
-          },
-          "localizations" : [
-            {
-              "description" : "Weekly home visits by an expert",
-              "displayName" : "Gold",
-              "locale" : "en_US"
-            }
-          ],
-          "productID" : "com.rarcher.subscription.vip.gold",
-          "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Gold",
-          "subscriptionGroupID" : "8126C4BB",
-          "type" : "RecurringSubscription"
-        }
-      ]
-    }
   ],
   "version" : {
     "major" : 1,

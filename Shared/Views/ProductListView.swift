@@ -22,13 +22,13 @@ struct ProductListView: View {
                     ProductListViewRow(products: nonConsumables, headerText: "Products")
                 }
                 
-                if let consumables = storeHelper.consumableProducts {
-                    ProductListViewRow(products: consumables, headerText: "VIP Services")
-                }
+//                if let consumables = storeHelper.consumableProducts {
+//                    ProductListViewRow(products: consumables, headerText: "VIP Services")
+//                }
                 
-                if let subscriptions = storeHelper.subscriptionProducts {
-                    SubscriptionListViewRow(products: subscriptions, headerText: "Subscriptions")
-                }
+//                if let subscriptions = storeHelper.subscriptionProducts {
+//                    SubscriptionListViewRow(products: subscriptions, headerText: "Subscriptions")
+//                }
             }
             .listStyle(.insetGrouped)
             

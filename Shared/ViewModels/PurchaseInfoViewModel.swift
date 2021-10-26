@@ -36,29 +36,32 @@ struct PurchaseInfoViewModel {
             
 //            text = "Today is \(dateFormatter.string(from: Date())) \n Purchased on \(dateFormatter.string(from: transaction.purchaseDate))"
             
-            text = "Purchased on \(dateFormatter.string(from: transaction.purchaseDate))"
+          //  text = "Purchased on \(dateFormatter.string(from: transaction.purchaseDate))"
             
 //            text += DateInterval(start: Date(), end: transaction.purchaseDate)
 //            let between = Date().timeIntervalSinceReferenceDate - transaction.purchaseDate.timeIntervalSinceReferenceDate
             
             let trailStart = transaction.purchaseDate
             let userCalendar = Calendar.current
-            let trailEndDate = userCalendar.date(byAdding: .day, value: 2, to: trailStart)
+            let trailEndDate = userCalendar.date(byAdding: .day, value: 14, to: trailStart)
             let trailEndString =  dateFormatter.string(from: trailEndDate!)
-        
+            
+            
+            let remainingDays = userCalendar.dateComponents([.day], from: trailEndDate!,
+                                                            to: Date())
             
             if productId == "com.shenxiaochun.nonconsumable.trail" {
-                
-                text += "\n 14-day trail"
-                
+        
                 if today > trailEndDate! {
-                    text += ("\n trail expired ")
+                    text += ("\n 试用已过期 \n 为了测试，试用时间设置只设置了5分钟天")
                 }
                 else {
-                    text += ("\n continue in trail ")
+                    text += ("\n Product: Name Free Trail ")
+                    text += ("\n Days Remaining: 14 days  \(remainingDays)")
+                    text += ("\n Expires On: \(trailEndString)")
+                    
                 }
-
-                text += ("\n expire after 14-day trail \(trailEndString)")
+             //   text += ("\n expire after 14-day trail \(trailEndString)")
             }
             
             if transaction.revocationDate != nil {
