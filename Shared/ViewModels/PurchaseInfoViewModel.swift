@@ -47,17 +47,17 @@ struct PurchaseInfoViewModel {
             let trailEndString =  dateFormatter.string(from: trailEndDate!)
             
             
-            let remainingDays = userCalendar.dateComponents([.day], from: trailEndDate!,
-                                                            to: Date())
+            let remainingDays = userCalendar.dateComponents([.day], from: Date(),
+                                                            to: trailEndDate!)
             
             if productId == "com.shenxiaochun.nonconsumable.trail" {
         
                 if today > trailEndDate! {
-                    text += ("\n 试用已过期 \n 为了测试，试用时间设置只设置了5分钟天")
+                    text += ("\n 试用已过期 \n 为了测试，试用时间设置只设置了1分钟")
                 }
                 else {
                     text += ("\n Product: Name Free Trail ")
-                    text += ("\n Days Remaining: 14 days  \(remainingDays)")
+                    text += ("\n Days Remaining: \(remainingDays.day!) days")
                     text += ("\n Expires On: \(trailEndString)")
                     
                 }
